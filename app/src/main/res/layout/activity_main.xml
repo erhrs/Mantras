@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="265dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="73dp"
+        android:contentDescription="om"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/om" />
+
+    <Button
+        android:id="@+id/buttonShiva"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#FFC107"
+        android:onClick="openShivTandav"
+        android:text="@string/buttonShiva"
+        android:textColor="#E32517"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="37dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/textview1"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#FFC107"
+        android:onClick="openHanumanChalisa"
+        android:text="@string/buttonHanuman"
+        android:textColor="#E32517"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShiva" />
+</androidx.constraintlayout.widget.ConstraintLayout>
